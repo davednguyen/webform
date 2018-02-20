@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Web Form</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <div class="container">
+
+<head>
+    <title>Web Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
         <h1>Web form submit</h1>
         <p>sign-up our email list to get more info about new product!</p>
         <form class="emailForm" name="custSignUpForm" onsubmit="signUpForm()">
             <div class="form-group">
                 <label class="formField" for="fName">First Name: </label>
-                <input type="text" name="fName" required>            
+                <input type="text" name="fName" required>
             </div>
             <div class="form-group">
                 <lable class="formField" for="lName">Last Name:</lable>
-                <input type="text" name="lName" required>            
+                <input type="text" name="lName" required>
             </div>
             <div class="form-group">
-                    <label class="formField" for="phone">Phone:(10 digits number)</label>
-                        <input type="tel" name="phone" required pattern="^\d{3}\d{3}\d{4}$">            
+                <label class="formField" for="phone">Phone:(10 digits number)</label>
+                <input type="tel" name="phone" required pattern="^\d{3}\d{3}\d{4}$">
             </div>
             <div class="form-group">
-            <label class="formField" for="email">Email:</label> 
+                <label class="formField" for="email">Email:</label>
                 <input type="email" name="email" required>
             </div>
-           <input type="submit">
-           <input type="reset">
+            <input type="submit">
+            <input type="reset">
         </form>
         <section class="confirmSection">
-                <h4 id="confirmNote"></h4>
+            <h4 id="confirmNote"></h4>
+            <div class="infoReceived">
                 <p id="infoLine1"></p>
                 <p id="infoLine2"></p>
                 <p id="infoLine3"></p>
-        </section>        
-        </div>
+            </div>
+        </section>
+    </div>
     <script src="webform.js"></script>
-    </body>
+</body>
+
 </html>
