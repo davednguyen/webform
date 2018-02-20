@@ -11,7 +11,7 @@
     <div class="container">
         <h1>Web form submit</h1>
         <p>sign-up our email list to get more info about new product!</p>
-        <form class="emailForm" name="custSignUpForm" onsubmit="signUpForm()">
+        <form class="emailForm" id="emailForm" name="custSignUpForm" onsubmit="signUpForm()">
             <div class="form-group">
                 <label class="formField" for="fName">First Name: </label>
                 <input type="text" name="fName" required>
@@ -38,6 +38,10 @@
                 <p id="infoLine2"></p>
                 <p id="infoLine3"></p>
             </div>
+        </section>
+        <section class="modifySection" id="modify">
+            <button id="modifyInfo" onclick="modifyInfo()">Modify</button>
+            <button id="removeInfo" onclick="removeInfo()">Remove from email list</button>
         </section>
     </div>
     <script src="webform.js"></script>
