@@ -5,3 +5,14 @@ h1, p{
 .formField{
     display: flex;    
 }
+
+.confirmSection{
+    color: green;
+    display: flex;
+}
+
+#infoLine1, #infoLine2, #infoLine3{
+    color: blue;
+    width: 30rem;
+    display: flex;    
+}
