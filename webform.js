@@ -10,8 +10,10 @@ function signUpForm(){
     var lastName = document.custSignUpForm.lName.value;
     var emailAddress = document.custSignUpForm.email.value;
     var phoneNumber = document.custSignUpForm.phone.value;
+    var confirmNote = "Thanks "+ firstName + " ,you are on our email list!              ";
 
     //log the info get from form
+    console.log(confirmNote);
     console.log(firstName);
     console.log(lastName);
     console.log(emailAddress);
@@ -20,7 +22,7 @@ function signUpForm(){
 
     //display info on the page
     var confirmInfo = document.getElementById("confirmNote");
-    confirmInfo.innerHTML = "Thanks "+ firstName + " ,you are on our email list!         ";
+    confirmInfo.innerHTML = confirmNote;
     var fullName = document.getElementById("infoLine1");
     fullName.innerHTML = "Full name: " + firstName + " " + lastName;
     var customerPhone = document.getElementById("infoLine2");
