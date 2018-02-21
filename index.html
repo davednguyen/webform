@@ -14,19 +14,19 @@
         <form class="emailForm" id="emailForm" name="custSignUpForm" onsubmit="signUpForm()">
             <div class="form-group">
                 <label class="formField" for="fName">First Name: </label>
-                <input type="text" name="fName" required>
+                <input class="formInput" id="fName" type="text" name="fName" required>
             </div>
             <div class="form-group">
                 <lable class="formField" for="lName">Last Name:</lable>
-                <input type="text" name="lName" required>
+                <input class="formInput" id="lName" type="text" name="lName" required>
             </div>
             <div class="form-group">
                 <label class="formField" for="phone">Phone:(10 digits number)</label>
-                <input type="tel" name="phone" required pattern="^\d{3}\d{3}\d{4}$">
+                <input class="formInput" id="phone" type="tel" name="phone" required pattern="^\d{3}\d{3}\d{4}$">
             </div>
             <div class="form-group">
                 <label class="formField" for="email">Email:</label>
-                <input type="email" name="email" required>
+                <input class="formInput" id="email" type="text" name="email" required>
             </div>
             <input type="submit">
             <input type="reset">

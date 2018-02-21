@@ -1,16 +1,19 @@
 //testing out of the script is picked up by HTML page
 console.log("script implemented into the page")
 
+//setup values for modify function
+var firstName, lastName, emailAddress, phoneNumber, confirmNote;
+
 //submit function to get email
 function signUpForm() {
     event.preventDefault();
 
     //get values from the form
-    var firstName = document.custSignUpForm.fName.value;
-    var lastName = document.custSignUpForm.lName.value;
-    var emailAddress = document.custSignUpForm.email.value;
-    var phoneNumber = document.custSignUpForm.phone.value;
-    var confirmNote = "Thanks " + firstName + " ,you are on our email list!";
+    firstName = document.custSignUpForm.fName.value;
+    lastName = document.custSignUpForm.lName.value;
+    emailAddress = document.custSignUpForm.email.value;
+    phoneNumber = document.custSignUpForm.phone.value;
+    confirmNote = "Thanks " + firstName + " ,you are on our email list!";
 
     //log the info get from form
     console.log(confirmNote);
@@ -40,6 +43,26 @@ function removeInfo() {
     var confirmNote = "Hello ,your info removed from our email list!";
     var confirmInfo = document.getElementById("confirmNote");
     confirmInfo.innerHTML = confirmNote;
+    var fullName = document.getElementById("infoLine1");
+    fullName.innerHTML = "";
+    var customerPhone = document.getElementById("infoLine2");
+    customerPhone.innerHTML = "";
+    var customerEmail = document.getElementById("infoLine3");
+    customerEmail.innerHTML = "";
+    var modifySection = document.getElementById("modify");
+    modifySection.style.display = "none";
+}
+
+//function to modify the info already in email list
+function modifyInfo() {
+    //updates the current values back to the form fields
+    document.custSignUpForm.fName.value = firstName;
+    document.custSignUpForm.lName.value = lastName;
+    document.custSignUpForm.phone.value = phoneNumber;
+    document.custSignUpForm.email.value = emailAddress;
+    //clear the confirm notes
+    var confirmInfo = document.getElementById("confirmNote");
+    confirmInfo.innerHTML = "";
     var fullName = document.getElementById("infoLine1");
     fullName.innerHTML = "";
     var customerPhone = document.getElementById("infoLine2");

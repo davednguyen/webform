@@ -1,11 +1,27 @@
+/* page global style */
+
 h1,
 p {
     text-align: center;
 }
 
+
+/* form styles */
+
 .formField {
     display: flex;
 }
+
+.formInput {
+    background: yellowgreen;
+}
+
+.formInput:hover {
+    background: yellow;
+}
+
+
+/* confirm section styles */
 
 .confirmSection {
     color: green;
