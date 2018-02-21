@@ -13,7 +13,7 @@ function signUpForm() {
     lastName = document.custSignUpForm.lName.value;
     emailAddress = document.custSignUpForm.email.value;
     phoneNumber = document.custSignUpForm.phone.value;
-    confirmNote = "Thanks " + firstName + " ,you are on our email list!";
+    confirmNote = "Thanks " + firstName + ", you are on our email list!";
 
     //log the info get from form
     console.log(confirmNote);
@@ -40,7 +40,7 @@ function signUpForm() {
 //function to remove customer from email list per his/her request
 function removeInfo() {
     //display info on the page
-    var confirmNote = "Hello " + firstName + ", your info removed from our email list!";
+    var confirmNote = "Your info have been removed from our email list!";
     var confirmInfo = document.getElementById("confirmNote");
     confirmInfo.innerHTML = confirmNote;
     var fullName = document.getElementById("infoLine1");
