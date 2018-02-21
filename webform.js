@@ -40,7 +40,7 @@ function signUpForm() {
 //function to remove customer from email list per his/her request
 function removeInfo() {
     //display info on the page
-    var confirmNote = "Hello ,your info removed from our email list!";
+    var confirmNote = "Hello " + firstName + ", your info removed from our email list!";
     var confirmInfo = document.getElementById("confirmNote");
     confirmInfo.innerHTML = confirmNote;
     var fullName = document.getElementById("infoLine1");
